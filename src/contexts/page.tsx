@@ -1,7 +1,6 @@
 import { useMediaQuery } from "@mui/material";
 import { noop } from "lodash";
 import { createContext, FC, useEffect, useMemo, useState } from "react";
-import ShadowLoader from "../components/ShadowLoader";
 import AppNavBar from "../components/AppNavBar2";
 
 // {
@@ -69,7 +68,6 @@ const PageContextProvider: FC<{ children: any }> = ({ children }) => {
 			}}
 		>
 			{children}
-      <ShadowLoader />
 		</PageContext.Provider>
 	);
 };

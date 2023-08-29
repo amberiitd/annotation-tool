@@ -5,17 +5,12 @@ import {
 	Navigate,
 	Route,
 	Routes,
-	useNavigate,
-	useParams,
 } from "react-router-dom";
 import "./App.css";
 import { ColorModeContext, tokens, useMode } from "./contexts/theme";
 import HomePage from "./pages/home";
-import { FC, useContext, useEffect, useMemo, useState } from "react";
 import PageContextProvider, { PageContext } from "./contexts/page";
 import { ToastContainer } from "react-toastify";
-import RightConnectDrawer from "./components/RightConnectDrawer";
-import AppNavBar from "./components/AppNavBar2";
 import Saved from "./pages/saved";
 
 

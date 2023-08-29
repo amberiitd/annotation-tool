@@ -11,7 +11,6 @@ import {
 } from "react";
 import { tokens } from "../contexts/theme";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import GradientText from "../components/GradientText";
 import PageWrapper from "../contexts/PageWrapper";
 import { PageContext } from "../contexts/page";
 import { imageList } from "../constants/general";

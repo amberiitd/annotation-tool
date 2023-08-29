@@ -2,7 +2,6 @@ import { useTheme } from "@emotion/react";
 import { FC, useMemo, useContext } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import AppNavBar from "../components/AppNavBar2";
-import RightConnectDrawer from "../components/RightConnectDrawer";
 import { PageContext } from "./page";
 import { tokens } from "./theme";
 import { Box } from "@mui/material";

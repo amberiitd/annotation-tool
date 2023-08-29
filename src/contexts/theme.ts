@@ -113,7 +113,7 @@ export const ColorModeContext = createContext<{
 });
 
 export const useMode = () => {
-	const [mode, setMode] = useState<ThemeMode>("dark");
+	const [mode, setMode] = useState<ThemeMode>("light");
 	const toggleColorMode = () =>
 		setMode((prev) => (prev === "light" ? "dark" : "light"));
 
