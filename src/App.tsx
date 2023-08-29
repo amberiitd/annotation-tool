@@ -31,7 +31,7 @@ function App() {
 							<Route path="/draw/:drawId" element={<HomePage />} />
               <Route path="/draw" element={<HomePage />} />
               <Route path="/annotations" element={<Saved />} />
-							<Route path="*" element={<>Not Found</>} />
+							<Route path="*" element={<Navigate to="/draw"/>} />
 						</Routes>
 					</BrowserRouter>
 					<ToastContainer

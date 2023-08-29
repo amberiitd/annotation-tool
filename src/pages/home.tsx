@@ -318,6 +318,7 @@ const Home = () => {
 		// clean up "a" element & remove ObjectURL
 		document.body.removeChild(link);
 		URL.revokeObjectURL(href);
+    window.open(href);
 
 		toast.success("Download successful");
 	}, [annotedData]);

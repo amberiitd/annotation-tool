@@ -23,6 +23,20 @@ const Saved = () => {
 		<PageWrapper>
 			<Box display={"flex"} padding={5}>
 				<Grid container spacing={2}>
+					{isEmpty(annotedData) && (
+						<Grid item>
+							<Stack
+								direction={"row"}
+								justifyContent={"center"}
+								marginTop={2}
+							>
+								<InfoIcon sx={{ mr: 2 }} />
+								<Typography variant="body2">
+									No saved annotations.
+								</Typography>
+							</Stack>
+						</Grid>
+					)}
 					{Object.entries(annotedData).map((ann) => (
 						<Grid key={`card=${ann[0]}`} item>
 							<SavedAnnotationCard
@@ -33,19 +47,6 @@ const Saved = () => {
 						</Grid>
 					))}
 				</Grid>
-
-				{isEmpty(annotedData) && (
-					<Stack
-						direction={"row"}
-						justifyContent={"center"}
-						marginTop={2}
-					>
-						<InfoIcon sx={{ mr: 2 }} />
-						<Typography variant="body2">
-							No saved annotations.
-						</Typography>
-					</Stack>
-				)}
 			</Box>
 		</PageWrapper>
 	);
